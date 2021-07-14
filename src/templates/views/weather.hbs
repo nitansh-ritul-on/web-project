@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>links}}
+</head>
+
+<body>
+    <!-- navbar -->
+    {{>navbar}}
+    <!-- content -->
+    <div class="container-fluid main-header">
+        <div class="row">
+            <div class="col-md-10 col-12 m-auto">
+                <div class="main-content">
+                    <form class="temp-form">
+                        <input type="text" id="cityName" placeholder="Enter your City">
+                        <input type="submit" value="search" id="submit-btn">
+                    </form>
+                </div>
+
+                <div class="temp-information">
+                    <div class="top-layer">
+                        <p id="day">Tues</p>
+                        <p id="today">6 Feb</p>
+                    </div>
+                    <div class="main-layer">
+                        <p id="city-name">Darbhanga, IN</p>
+                        <div class="middle-layer data-hide">
+                            <p id="temp">
+                                <span>30</span><sup>o</sup>C
+                            </p>
+                            <p id="temp-status"><i class="fas fa-cloud"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    {{>footer}}
+    {{!-- <script src="public\js\main.js"></script> --}}
+</body>
+
+</html>
